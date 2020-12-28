@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1430. 숫자의 개수 | Tech Blog</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Tech Blog for donghun">
+    
+    <link rel="preload" href="/assets/css/0.styles.d4bf95f4.css" as="style"><link rel="preload" href="/assets/js/app.525ee5cb.js" as="script"><link rel="preload" href="/assets/js/2.5cca7000.js" as="script"><link rel="preload" href="/assets/js/19.4acd552f.js" as="script"><link rel="prefetch" href="/assets/js/10.24780224.js"><link rel="prefetch" href="/assets/js/11.9295c5d4.js"><link rel="prefetch" href="/assets/js/12.07cbfdae.js"><link rel="prefetch" href="/assets/js/13.c36bb58d.js"><link rel="prefetch" href="/assets/js/14.4afdfbae.js"><link rel="prefetch" href="/assets/js/15.8dd287c7.js"><link rel="prefetch" href="/assets/js/16.8c5d5bb8.js"><link rel="prefetch" href="/assets/js/17.d5df77c3.js"><link rel="prefetch" href="/assets/js/18.97b2be33.js"><link rel="prefetch" href="/assets/js/20.ac9089f1.js"><link rel="prefetch" href="/assets/js/21.b0503b40.js"><link rel="prefetch" href="/assets/js/22.ed5d4896.js"><link rel="prefetch" href="/assets/js/23.1f78191d.js"><link rel="prefetch" href="/assets/js/24.1a98ea1e.js"><link rel="prefetch" href="/assets/js/25.13b8e028.js"><link rel="prefetch" href="/assets/js/26.0b49a9cf.js"><link rel="prefetch" href="/assets/js/27.f8c2d254.js"><link rel="prefetch" href="/assets/js/28.a37cfd3d.js"><link rel="prefetch" href="/assets/js/29.0f79da6c.js"><link rel="prefetch" href="/assets/js/3.fd2834c1.js"><link rel="prefetch" href="/assets/js/30.5093e5c4.js"><link rel="prefetch" href="/assets/js/31.39a71d1e.js"><link rel="prefetch" href="/assets/js/32.f8619c15.js"><link rel="prefetch" href="/assets/js/33.68b7f04e.js"><link rel="prefetch" href="/assets/js/34.fc0ed323.js"><link rel="prefetch" href="/assets/js/4.b3d7061b.js"><link rel="prefetch" href="/assets/js/5.abedb45c.js"><link rel="prefetch" href="/assets/js/6.73c063ed.js"><link rel="prefetch" href="/assets/js/7.b4e343ac.js"><link rel="prefetch" href="/assets/js/8.d732b2f2.js"><link rel="prefetch" href="/assets/js/9.38b3bc75.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d4bf95f4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Tech Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  docs
+</a></div><div class="nav-item"><a href="https://github.com/andonghun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  docs
+</a></div><div class="nav-item"><a href="https://github.com/andonghun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/" aria-current="page" class="sidebar-link">Blog</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>정보 올림피아드</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/jungol/1291.html" class="sidebar-link">1291. 구구단</a></li><li><a href="/blog/jungol/1341.html" class="sidebar-link">1341. 구구단2</a></li><li><a href="/blog/jungol/1523.html" class="sidebar-link">1523. 별삼각형1</a></li><li><a href="/blog/jungol/1719.html" class="sidebar-link">1719. 별삼각형2</a></li><li><a href="/blog/jungol/1329.html" class="sidebar-link">1329. 별삼각형3</a></li><li><a href="/blog/jungol/2604.html" class="sidebar-link">2604. 그릇</a></li><li><a href="/blog/jungol/1692.html" class="sidebar-link">1692. 곱셈</a></li><li><a href="/blog/jungol/1303.html" class="sidebar-link">1303. 숫자사각형1</a></li><li><a href="/blog/jungol/1856.html" class="sidebar-link">1856. 숫자사각형2</a></li><li><a href="/blog/jungol/2046.html" class="sidebar-link">2046. 숫자사각형4</a></li><li><a href="/blog/jungol/1430.html" aria-current="page" class="active sidebar-link">1430. 숫자의 개수</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/jungol/2514.html" class="sidebar-link">2514 : 문자열 찾기</a></li><li><a href="/blog/jungol/1071.html" class="sidebar-link">1071 : 약수와 배수</a></li><li><a href="/blog/jungol/1307.html" class="sidebar-link">1307 : 문자사각형1</a></li><li><a href="/blog/jungol/1314.html" class="sidebar-link">1314 : 문자사각형2</a></li><li><a href="/blog/jungol/1641.html" class="sidebar-link">1641 : 숫자삼각형</a></li><li><a href="/blog/jungol/1402.html" class="sidebar-link">1402 : 약수 구하기</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>토이 프로젝트</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>wiki</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_1430-숫자의-개수"><a href="#_1430-숫자의-개수" class="header-anchor">#</a> 1430. 숫자의 개수</h3> <p><a href="http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&amp;wr_id=706&amp;sca=2030" target="_blank" rel="noopener noreferrer">출처<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h4 id="문제"><a href="#문제" class="header-anchor">#</a> 문제</h4> <div class="language- extra-class"><pre class="language-text"><code>세 개의 자연수 A, B, C가 주어질 때 A×B×C를 계산한 결과에 0부터 9까지 각각의 숫자가 몇 번씩 쓰였는지를 구하는 프로그램을 작성하시오.
+
+예를 들어 A = 150, B = 266, C = 427 이라면 A × B × C = 150 × 266 × 427 = 17037300 이 되고, 
+
+계산한 결과 17037300 에는 0이 3번, 1이 1번, 3이 2번, 7이 2번 쓰였다.​ 
+</code></pre></div><h4 id="입력-형식"><a href="#입력-형식" class="header-anchor">#</a> 입력 형식</h4> <div class="language- extra-class"><pre class="language-text"><code>첫째 줄에 A 둘째 줄에 B 셋째 줄에 C가 주어진다.
+
+A B C는 모두 100보다 같거나 크고 1 000보다 작은 자연수이다.
+</code></pre></div><h4 id="출력형식"><a href="#출력형식" class="header-anchor">#</a> 출력형식</h4> <div class="language- extra-class"><pre class="language-text"><code>첫째 줄에는 A×B×C의 결과에 0 이 몇 번 쓰였는지 출력한다.
+
+마찬가지로 둘째 줄부터 열 번째 줄까지 A×B×C의 결과에 1부터 9까지의 숫자가 각각 몇 번 쓰였는지 차례로 한 줄에 하나씩 출력한다.
+</code></pre></div><div class="language-python extra-class"><pre class="language-python"><code>a <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+c <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+result <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span>a<span class="token operator">*</span>b<span class="token operator">*</span>c<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+answer <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">*</span><span class="token number">10</span>
+
+<span class="token keyword">for</span> count <span class="token keyword">in</span> result<span class="token punctuation">:</span>
+    answer<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+
+<span class="token keyword">for</span> ans <span class="token keyword">in</span> answer<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>ans<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/jungol/2046.html" class="prev">
+        2046. 숫자사각형4
+      </a></span> <span class="next"><a href="/blog/jungol/2514.html">
+        2514 : 문자열 찾기
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.525ee5cb.js" defer></script><script src="/assets/js/2.5cca7000.js" defer></script><script src="/assets/js/19.4acd552f.js" defer></script>
+  </body>
+</html>

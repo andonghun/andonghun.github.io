@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2604. 그릇 | Tech Blog</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Tech Blog for donghun">
+    
+    <link rel="preload" href="/assets/css/0.styles.d4bf95f4.css" as="style"><link rel="preload" href="/assets/js/app.525ee5cb.js" as="script"><link rel="preload" href="/assets/js/2.5cca7000.js" as="script"><link rel="preload" href="/assets/js/27.f8c2d254.js" as="script"><link rel="prefetch" href="/assets/js/10.24780224.js"><link rel="prefetch" href="/assets/js/11.9295c5d4.js"><link rel="prefetch" href="/assets/js/12.07cbfdae.js"><link rel="prefetch" href="/assets/js/13.c36bb58d.js"><link rel="prefetch" href="/assets/js/14.4afdfbae.js"><link rel="prefetch" href="/assets/js/15.8dd287c7.js"><link rel="prefetch" href="/assets/js/16.8c5d5bb8.js"><link rel="prefetch" href="/assets/js/17.d5df77c3.js"><link rel="prefetch" href="/assets/js/18.97b2be33.js"><link rel="prefetch" href="/assets/js/19.4acd552f.js"><link rel="prefetch" href="/assets/js/20.ac9089f1.js"><link rel="prefetch" href="/assets/js/21.b0503b40.js"><link rel="prefetch" href="/assets/js/22.ed5d4896.js"><link rel="prefetch" href="/assets/js/23.1f78191d.js"><link rel="prefetch" href="/assets/js/24.1a98ea1e.js"><link rel="prefetch" href="/assets/js/25.13b8e028.js"><link rel="prefetch" href="/assets/js/26.0b49a9cf.js"><link rel="prefetch" href="/assets/js/28.a37cfd3d.js"><link rel="prefetch" href="/assets/js/29.0f79da6c.js"><link rel="prefetch" href="/assets/js/3.fd2834c1.js"><link rel="prefetch" href="/assets/js/30.5093e5c4.js"><link rel="prefetch" href="/assets/js/31.39a71d1e.js"><link rel="prefetch" href="/assets/js/32.f8619c15.js"><link rel="prefetch" href="/assets/js/33.68b7f04e.js"><link rel="prefetch" href="/assets/js/34.fc0ed323.js"><link rel="prefetch" href="/assets/js/4.b3d7061b.js"><link rel="prefetch" href="/assets/js/5.abedb45c.js"><link rel="prefetch" href="/assets/js/6.73c063ed.js"><link rel="prefetch" href="/assets/js/7.b4e343ac.js"><link rel="prefetch" href="/assets/js/8.d732b2f2.js"><link rel="prefetch" href="/assets/js/9.38b3bc75.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d4bf95f4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Tech Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  docs
+</a></div><div class="nav-item"><a href="https://github.com/andonghun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  docs
+</a></div><div class="nav-item"><a href="https://github.com/andonghun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/" aria-current="page" class="sidebar-link">Blog</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>정보 올림피아드</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/jungol/1291.html" class="sidebar-link">1291. 구구단</a></li><li><a href="/blog/jungol/1341.html" class="sidebar-link">1341. 구구단2</a></li><li><a href="/blog/jungol/1523.html" class="sidebar-link">1523. 별삼각형1</a></li><li><a href="/blog/jungol/1719.html" class="sidebar-link">1719. 별삼각형2</a></li><li><a href="/blog/jungol/1329.html" class="sidebar-link">1329. 별삼각형3</a></li><li><a href="/blog/jungol/2604.html" aria-current="page" class="active sidebar-link">2604. 그릇</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/jungol/1692.html" class="sidebar-link">1692. 곱셈</a></li><li><a href="/blog/jungol/1303.html" class="sidebar-link">1303. 숫자사각형1</a></li><li><a href="/blog/jungol/1856.html" class="sidebar-link">1856. 숫자사각형2</a></li><li><a href="/blog/jungol/2046.html" class="sidebar-link">2046. 숫자사각형4</a></li><li><a href="/blog/jungol/1430.html" class="sidebar-link">1430. 숫자의 개수</a></li><li><a href="/blog/jungol/2514.html" class="sidebar-link">2514 : 문자열 찾기</a></li><li><a href="/blog/jungol/1071.html" class="sidebar-link">1071 : 약수와 배수</a></li><li><a href="/blog/jungol/1307.html" class="sidebar-link">1307 : 문자사각형1</a></li><li><a href="/blog/jungol/1314.html" class="sidebar-link">1314 : 문자사각형2</a></li><li><a href="/blog/jungol/1641.html" class="sidebar-link">1641 : 숫자삼각형</a></li><li><a href="/blog/jungol/1402.html" class="sidebar-link">1402 : 약수 구하기</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>토이 프로젝트</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>wiki</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_2604-그릇"><a href="#_2604-그릇" class="header-anchor">#</a> 2604. 그릇</h3> <p><a href="http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&amp;wr_id=1865&amp;sca=2050" target="_blank" rel="noopener noreferrer">출처<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h4 id="문제"><a href="#문제" class="header-anchor">#</a> 문제</h4> <div class="language- extra-class"><pre class="language-text"><code>그릇을 바닥에 놓았을 때 그 높이는 10cm 이다. 
+그런데 두 개의 그릇을 같은 방향으로 포개면 그 높이는 5cm만 증가된다. 
+만일 그릇이 서로 반대방향으로 쌓이면 높이는 그릇만큼, 즉 10cm 늘어난다. 
+그릇을 괄호 기호로 나타내어 설명해보자. 편의상 그릇이 쌓여지는 방향은 왼쪽에서 오른쪽이라고 가정한다. 
+그림에서 ‘(’은 그릇이 바닥에 바로 놓인 상태를 나타내며, ‘)’은 그릇이 거꾸로 놓인 상태를 나타낸다.
+만일 그릇이 포개진 모양이 아래 그림 1(a)와 같다면 전체의 높이는 25cm가 된다. 
+왜냐하면 처음 바닥에 있는 그릇의 높이가 10cm이고 
+이후 같은 방향으로 3개의 그릇이 포개져 있으므로 늘어난 높이는 5+5+5=15 이기 때문이다. 
+그림 1(b)와 같은 경우라면 그 높이는 10*4=40cm가 된다.
+여러분은 입력파일에 주어진 모양대로 그릇을 쌓을 때 최종의 전체 그릇 높이를 계산해서 출력해야 한다. 
+즉 처음 입력으로 주어진 각 그릇의 방향은 바꿀 수 없다.
+</code></pre></div><p><img src="http://jungol.co.kr/data/editor/1512/e3050b66a1b29a01767400d7560a4131_1449727195_0993.png" alt=""></p> <h4 id="입력-형식"><a href="#입력-형식" class="header-anchor">#</a> 입력 형식</h4> <div class="language- extra-class"><pre class="language-text"><code>입력파일의 첫 줄에는 괄호문자로만 이루어진 문자열이 주어진다.
+입력 문자열에서 열린 괄호 ‘(’은 바로 놓인 그릇 닫힌 괄호 ‘)’은 거꾸로 놓인 그릇을 나타난다. 
+문자열의 길이는 3이상 50 이하이다.
+
+</code></pre></div><h4 id="출력형식"><a href="#출력형식" class="header-anchor">#</a> 출력형식</h4> <div class="language- extra-class"><pre class="language-text"><code>여러분은 그릇 방향이 괄호 문자로 표시된 문자열을 읽어서 그 최종의 높이를 정수로 출력해야 한다.
+</code></pre></div><div class="language-python extra-class"><pre class="language-python"><code>dish <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+answer <span class="token operator">=</span> <span class="token number">10</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>dish<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> dish<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> dish<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+        answer <span class="token operator">+=</span> <span class="token number">10</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        answer <span class="token operator">+=</span> <span class="token number">5</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>answer<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/jungol/1329.html" class="prev">
+        1329. 별삼각형3
+      </a></span> <span class="next"><a href="/blog/jungol/1692.html">
+        1692. 곱셈
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.525ee5cb.js" defer></script><script src="/assets/js/2.5cca7000.js" defer></script><script src="/assets/js/27.f8c2d254.js" defer></script>
+  </body>
+</html>
